@@ -1,0 +1,29 @@
+/* AlumniDirectory.css */
+.directory {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .directory-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .directory-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .directory-item h3 {
+    margin: 0 0 10px 0;
+    color: #004d40;
+  }
+  
+  .directory-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
