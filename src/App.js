@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// App.jsx
+import React from 'react';
+import NavBar from './components/Navbar';
+import AlumniDirectory from './components/AlumniDirectory';
+import ProfilePage from './components/ProfilePage';
+import EventManagement from './components/EventManagement';
 
-function App() {
+const App = () => {
+  const sampleAlumni = {
+    name: "John Doe",
+    batch: "2015",
+    occupation: "Software Engineer",
+    bio: "John is a software engineer with over 5 years of experience in full-stack development.",
+    photo: "https://via.placeholder.com/150"
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <AlumniDirectory />
+      <ProfilePage alumni={sampleAlumni} />
+      <EventManagement />
     </div>
   );
-}
+};
 
 export default App;
